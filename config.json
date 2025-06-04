@@ -1,6 +1,6 @@
 {
     "core": {
-      "test_url": "https://www.gstatic.com/generate_204",
+      "test_url": "http://connectivitycheck.gstatic.com/generate_204",
       "log_level": "warning",
       "domain_strategy": "IPIFNonMatch",
       "allow_insecure_tls": false,
@@ -13,8 +13,8 @@
         "enabled": true,
         "fake_dns_enabled": true,
         "local_port": 10853,
-        "remote_server": "https://8.8.8.8/dns-query",
-        "domestic_server": "1.1.1.2"
+        "remote_server": "https://dns.azadnet1.workers.dev/dns-query",
+        "domestic_server": "tcp://8.8.4.4"
       },
       "routing_rules": {
         "proxy": "",
@@ -22,7 +22,7 @@
         "block": ""
       },
       "fragment": {
-        "enabled": true,
+        "enabled": false,
         "packets": "tlshello",
         "length": "10-30",
         "interval": "1-5"
